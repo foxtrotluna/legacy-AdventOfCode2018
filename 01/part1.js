@@ -1,15 +1,14 @@
-
 import readFileAsync from 'read-file-async'
 const Part1 = async () =>{
     const buffer = await readFileAsync('./input.txt')
     const input = buffer.toString()
 
     const split = input.split('\n')
-    let startFreq = 0
+    let freq = 0
     for(const sp of split){
-        startFreq += parseInt(sp)
+        freq += parseInt(sp)
     }
-    console.log(startFreq)
+    console.log('Part 1: '+freq)
 }
 
 export default Part1
