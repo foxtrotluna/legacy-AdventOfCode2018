@@ -12,7 +12,7 @@ const Part1 = async () =>{
             triplesCounter++
         }
     }
-    console.log(doublesCounter*triplesCounter)
+    console.log("Part 1: " +(doublesCounter*triplesCounter))
 }
 
 const hasLetterCount = (str,c) => {
